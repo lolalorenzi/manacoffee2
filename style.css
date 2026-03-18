@@ -1,0 +1,293 @@
+/* Fonte: "kurdis" por  That That Creative (https://creativemarket.com/ThatThatCreative/21333839-Kurdis-Font-Family-%2830-Styles%29?u=jack.john) */
+@font-face {
+    font-family: 'kurdis';
+    src: url('./kurdis-font-family-1710847728-0/KurdisVariableFamilyTest-SemiBold-BF64bf41e14db3c.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100x;
+    }
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#9CAB84;
+    color: #fff;
+}
+
+.cabecalho {
+    background-image: url('./assets/imagem_01.png'); /* COLOQUE SUA IMAGEM AQUI */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -80px 60px -30px rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.cabecalho::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade (0.3 = mais claro, 0.7 = mais escuro) */
+    z-index: 1;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 50px;
+    z-index: 3;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; 
+    gap: 40px;
+}
+
+.menu a {
+    font-family:'kurdis';
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: opacity 0.3s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 40px 60px; 
+    position: relative;
+    z-index: 2;
+}
+.logo__titulo {
+    width: 400px; 
+    display: flex;
+    text-align: center;
+}
+.cabecalho-conteudo {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.descricao {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #ccc;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+.botao {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    position: relative;
+    border: 1px solid #9CAB84;
+    background: transparent;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.botao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #9CAB84;
+    transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: -1;
+}
+
+.botao:hover {
+    color: #000;
+}
+
+.botao:hover::before {
+    left: 0;
+}
+
+.botao-seta {
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.botao:hover .botao-seta {
+    transform: translateX(5px);
+}
+
+
+.container__terciario1{
+    margin-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #9CAB84;
+    display: flex;
+    flex-direction:row;
+    gap:20px;
+}
+
+.titulo__terciario{
+    font-family:'kurdis';
+    font-size: 36px;
+    color: #32401D;
+}
+
+.imagem__terciario1{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #9CAB84;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container__terceiro__texto{
+    padding: 0px 20px 20px 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    gap:10px;
+    color: #fff;
+   text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.3),
+        2px 2px 4px rgba(0, 0, 0, 0.2),
+        3px 3px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 300;
+}
+
+.container__quarto
+{
+    margin-left: 0px;
+    padding-top: 20px;
+    background-color: #9CAB84;
+    display: flex;
+    flex-direction:row;
+}
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor--primaria, #32401D);
+    color: white;
+    padding: 40px 0 0;
+    margin-top: 60px;
+    margin:0;
+    
+}
+.logo__footer{
+    width: 10em; 
+    display: flex;
+
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+
+.footer-title {
+    color: var(--cor--secundaria, #9CAB84);
+    font-family: 'kurdis';
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-title--mt {
+    margin-top: 20px;
+}
+
+.footer-slogan {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Listas */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: var(--cor--secundaria, #9CAB84);
+    text-decoration: none;
+}
+
+/* Contato (sem links) */
+.footer-contato li {
+    opacity: 0.9;
+}
+
+/* Bottom */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.footer-note {
+    font-style: italic;
+    color: var(--cor--secundaria, #9CAB84);
+}
