@@ -102,7 +102,17 @@ body {
     margin-bottom: 20px;
 
 }
+.descricao__links {
+    gap:30px;
+    display:flex;
+    justify-content: flex-start;
+    
+    }
 
+    .img__links{
+        padding-top: 30px;
+        width: 25px;
+    }
 .botao {
     display: inline-block;
     color: #fff;
