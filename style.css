@@ -24,7 +24,7 @@ body {
 }
 
 .cabecalho {
-    background-image: url('./assets/imagem_01.png'); /* COLOQUE SUA IMAGEM AQUI */
+    background-image: url('./assets/imagem_01.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade (0.3 = mais claro, 0.7 = mais escuro) */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
@@ -62,18 +62,35 @@ body {
 }
 
 .menu a {
-    font-family:'kurdis';
+    font-family: 'kurdis';
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 400;
-    transition: opacity 0.3s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9CAB84;
+    transition: width 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .menu a:hover {
-    opacity: 0.7;
+    color: #9CAB84; 
+}
+
+.menu a:hover::after {
+    width: 100%;
 }
 
 .container {
@@ -160,44 +177,89 @@ body {
 }
 
 
-.container__terciario1{
-    margin-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #9CAB84;
+.container__terciario1 {
+    max-width: 1200px;
+    margin: 80px auto;         
+    padding: 40px 20px;
     display: flex;
-    flex-direction:row;
-    gap:20px;
+    flex-direction: row;
+    align-items: center;        
+    gap: 40px;                
+    background: radial-gradient(circle at 70% 30%, 
+                rgba(255,255,255,0.95) 0%, 
+                rgba(156,171,132,0.3) 120%);
+    border-radius: 24px;      
+    box-shadow: 0 20px 40px -10px rgba(50,64,29,0.3);
 }
 
-.titulo__terciario{
-    font-family:'kurdis';
-    font-size: 36px;
-    color: #32401D;
-}
-
-.imagem__terciario1{
-    position: relative;
-    width: 250px;
-    height: 250px;
+/* Área da imagem */
+.imagem__terciario1 {
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;          
     border: 4px solid #9CAB84;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.container__terceiro__texto{
-    padding: 0px 20px 20px 50px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-    gap:10px;
-    color: #fff;
-   text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.3),
-        2px 2px 4px rgba(0, 0, 0, 0.2),
-        3px 3px 6px rgba(0, 0, 0, 0.1);
-    font-weight: 300;
+.imagem__terciario1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(50,64,29,0.4);
+}
+
+
+.container__terceiro__texto {
+    flex: 1;                   
+    padding: 20px;
+    color: #2C3E2F;           
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;           
+    text-shadow: none;         
+}
+
+.titulo__terciario {
+    font-family: 'kurdis';
+    font-size: 2.5rem;
+    color: #32401D;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.local-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed #9CAB84;
+    font-style: normal;
+    color: #32401D;
+    font-size: 0.95rem;
+}
+
+.local-info strong {
+    font-family: 'kurdis';
+    font-size: 1.1rem;
+}
+
+/* Responsividade: em telas pequenas, imagem em cima do texto */
+@media (max-width: 768px) {
+    .container__terciario1 {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    
+    .imagem__terciario1 {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .container__terceiro__texto {
+        text-align: center;
+    }
 }
 
 .container__quarto
@@ -272,7 +334,7 @@ body {
     text-decoration: none;
 }
 
-/* Contato (sem links) */
+/* Contato  */
 .footer-contato li {
     opacity: 0.9;
 }
