@@ -3,123 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mana Coffee — Um lugar, tantas histórias. Especialistas em matcha de Hadong, Coreia do Sul.">
     <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="assets/MANA_LOGO_GREEN_COMPACT.png" type="image/x-icon">
+    <link rel="icon" href="assets/MANA_LOGO_GREEN_COMPACT.png" type="image/x-icon">
     <title>Mana Coffee 마나</title>
 </head>
 <body>
+
     <header class="cabecalho">
-        <!-- Menu HEAD -->
-        <nav class="menu">
+        <nav class="menu" aria-label="Navegação principal">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#matcha" >Matcha</a></li>
-                <li><a href="#NossaLoja">Nossa Loja</a></li>
+                <li><a href="#matcha">Matcha</a></li>
+                <li><a href="#nossa-loja">Nossa Loja</a></li>
             </ul>
         </nav>
-        
-        <!--  header conteúdo principal-->
+
         <div class="container">
             <div class="cabecalho-conteudo">
-                <img src="./assets/MANA_LOGO_CREAM_FULL2.png" class="logo__titulo"></div>
+                <img src="./assets/MANA_LOGO_CREAM_FULL2.png" alt="Mana Coffee 마나 — logotipo" class="logo__titulo">
                 <div class="descricao">
-                <p><br>Um lugar, tantas histórias.</p>
-                <p>Cada visita e cada conversa,</p>
-                <p>é um sorriso e uma memória.</p>
+                    <p>Um lugar, tantas histórias.</p>
+                    <p>Cada visita e cada conversa,</p>
+                    <p>é um sorriso e uma memória.</p>
                 </div>
-                <a href=https://maps.app.goo.gl/TQu1i6F8YQoUkgSp9 target=_blank" class="botao">Venha nos visitar</a>
-                 <!-- <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Freepik - Flaticon</a> -->
+                <a href="https://maps.app.goo.gl/TQu1i6F8YQoUkgSp9" target="_blank" rel="noopener noreferrer" class="botao">
+                    Venha nos visitar
+                </a>
                 <div class="descricao__links">
-                <a href="https://www.instagram.com/manacoffee.br/" target="_blank" rel="noopener noreferrer">
-                 <img src="./assets/instagram.png" alt="instagram do mana coffee" class="img__links">
-                 <!-- <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a> -->
-                 <a href="https://www.linkedin.com/company/manacoffee/" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/linkedin.png" alt="linkedin do mana coffee" class="img__links">
-                </a> </div>
+                    <a href="https://www.instagram.com/manacoffee.br/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Mana Coffee">
+                        <img src="./assets/instagram.png" alt="Instagram" class="img__links">
+                    </a>
+                    <a href="https://www.linkedin.com/company/manacoffee/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn do Mana Coffee">
+                        <img src="./assets/linkedin.png" alt="LinkedIn" class="img__links">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
-    <!-- INFO MATCHA -->
-         <div class="container__terciario1" id="matcha">
-        <img src="./assets/imagem_03.png" alt="Matcha do Mana Coffee" class="imagem__terciario1">
-    <div class="container__terceiro__texto">
-        <h1 class="titulo__terciario">O nosso Matcha</h1>
-        
-        <p>Nosso matcha vem de Hadong, região montanhosa da Coreia do Sul.</p>
-        <p>Cultivado sem pesticidas, ele não tem conservantes, aromatizantes e nem aditivos.</p>
-        <p><strong>Se prepare pra um glow natural! Vem de Matcha com a gente.</strong></p>
-        
-        <!-- Endereço (opcional, pode ser incluído) -->
-        <div class="local-info">
-            <strong>마나</strong><br>
-            Seu cantinho secreto de matcha e cafés 🍵☕️
-        </div>
-    </div>
-</div>
-            <div class="container__quarto" id="NossaLoja">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.082309716293!2d-46.64209801390758!3d-23.529541805802438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590004bf58b7%3A0x76d95ff832192439!2zTWFuYSBDb2ZmZWUg66eI64KY!5e0!3m2!1sen!2sbr!4v1773808917249!5m2!1sen!2sbr" width="1905" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <main>
+        <!-- Seção: Nosso Matcha -->
+        <section class="container__terciario1" id="matcha" aria-labelledby="titulo-matcha">
+            <img src="./assets/imagem_03.png" alt="Copo de matcha do Mana Coffee" class="imagem__terciario1">
+            <div class="container__terceiro__texto">
+                <h2 class="titulo__terciario" id="titulo-matcha">O nosso Matcha</h2>
+                <p>Nosso matcha vem de Hadong, região montanhosa da Coreia do Sul.</p>
+                <p>Cultivado sem pesticidas, ele não tem conservantes, aromatizantes e nem aditivos.</p>
+                <p><strong>Se prepare pra um glow natural! Vem de Matcha com a gente.</strong></p>
+                <div class="local-info">
+                    <strong>마나</strong><br>
+                    Seu cantinho secreto de matcha e cafés 🍵☕️
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Nossa Loja / Mapa -->
+        <section class="container__quarto" id="nossa-loja" aria-label="Localização da loja">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.082309716293!2d-46.64209801390758!3d-23.529541805802438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590004bf58b7%3A0x76d95ff832192439!2zTWFuYSBDb2ZmZWUg66eI64KY!5e0!3m2!1sen!2sbr!4v1773808917249!5m2!1sen!2sbr"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização do Mana Coffee no Google Maps">
+            </iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="/assets/MANA_LOGO_CREAM_COMPACT.png" class="logo__footer" alt="Mana Coffee — logotipo">
             </div>
 
-            
-        
-        
-
-</body>
- <footer class="footer">
-    <div class="footer-container">
-        <!--Logo -->
-        <div class="footer-col">
-            <img src="/assets/MANA_LOGO_CREAM_COMPACT.png" class="logo__footer" alt="Mana coffee logo">
-            </ul>
-        </div>
-
-        <!--  Links Rápidos do footer -->
-        <div class="footer-col">
+            <div class="footer-col">
                 <h3 class="footer-title">Menu</h3>
                 <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="historia.html">Nossa História</a></li>
-                <li><a href="contato.html">Fale Conosco</a></li>
-                <li><a href="https://maps.app.goo.gl/TQu1i6F8YQoUkgSp9" target="_blank">Localização</a></li>
-            </ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="historia.html">Nossa História</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                    <li><a href="https://maps.app.goo.gl/TQu1i6F8YQoUkgSp9" target="_blank" rel="noopener noreferrer">Localização</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="privacidade.html">Termos de Uso</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Redes Sociais</h3>
+                <ul class="footer-social">
+                    <li><a href="https://www.instagram.com/manacoffee.br/" target="_blank" rel="noopener noreferrer">📷 Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/manacoffee/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a></li>
+                </ul>
+                <h3 class="footer-title footer-title--mt">Parceiro Oficial</h3>
+                <ul class="footer-parceiro">
+                    <li>🍵 <a href="https://www.instagram.com/namumatcha/" target="_blank" rel="noopener noreferrer">Namu Matcha</a></li>
+                </ul>
+            </div>
         </div>
 
-        <!-- Informações Legais -->
-        <div class="footer-col">
-            <h3 class="footer-title">Legal</h3>
-            <ul class="footer-links">
-                <li><a href="privacidade.html">Política de Privacidade</a></li>
-                <li><a href="privacidade.html">Termos de Uso</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>© 2025 Mana Coffee 마나. Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💚 por Paola Lorenzi.</p>
+                <p class="footer-note">Site institucional – não realizamos vendas online</p>
+                <p class="footer-creditos">
+                    Ícones por <a href="https://www.flaticon.com/br/autores/freepik" target="_blank" rel="noopener noreferrer">Freepik</a> no Flaticon |
+                    Fonte Kurdis por <a href="https://creativemarket.com/ThatThatCreative" target="_blank" rel="noopener noreferrer">That That Creative</a>
+                </p>
+            </div>
         </div>
+    </footer>
 
-        <!-- Redes Sociais e Parceiros -->
-        <div class="footer-col">
-            <h3 class="footer-title">Redes Sociais</h3>
-            <ul class="footer-social">
-                <li><a href="https://www.instagram.com/manacoffee.br/" target="_blank">📷 Instagram</a></li>
-                <li><a href="https://www.linkedin.com/company/manacoffee/" target="_blank">🔗 LinkedIn</a></li>
-            </ul>
-            
-            <h3 class="footer-title footer-title--mt">Parceiro Oficial</h3>
-            <ul class="footer-parceiro">
-                <li>🍵 <a href="https://www.instagram.com/namumatcha/" target="_blank">Namu Matcha</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="footer-bottom-container">
-            <p>© 2024 Mana Coffee 마나. Todos os direitos reservados.</p>
-            <p>Desenvolvido com 💚 por Paola Lorenzi.</p>
-            <p class="footer-note">Site institucional – não realizamos vendas online</p>
-             <p class="footer-creditos" style="font-size: 0.8rem; opacity: 0.6; margin-top: 10px;">
-            Ícones por <a href="https://www.flaticon.com/br/autores/freepik" target="_blank" style="color: #9CAB84; text-decoration: none;">Freepik</a> no Flaticon | 
-            Fonte Kurdis por <a href="https://creativemarket.com/ThatThatCreative" target="_blank" style="color: #9CAB84; text-decoration: none;">That That Creative</a>
-        </p>
-    </div>
-</div>
-        </div>
-    </div>
-</footer>
-               
+</body>
 </html>
