@@ -14,7 +14,7 @@ Site institucional desenvolvido para o **Mana Coffee**, um café com identidade 
 
 ## 📸 Preview
 
-| Hero | Seção Matcha |
+| Home | Seção Matcha |
 |------|-------------|
 | ![Hero do site Mana Coffee](assets/mana.png) | ![Seção matcha e mapa](assets/mana2.png) |
 
